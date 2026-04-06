@@ -1,0 +1,36 @@
+{
+  "name": "env-encrypt-cli",
+  "version": "1.0.0",
+  "description": "Encrypt and decrypt .env file values for secure storage in git",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "env-encrypt-cli": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "env",
+    "encrypt",
+    "decrypt",
+    "dotenv",
+    "secrets",
+    "git"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okirmio-create/env-encrypt-cli.git"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.5.0"
+  }
+}
